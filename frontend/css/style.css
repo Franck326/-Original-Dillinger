@@ -1,0 +1,195 @@
+
+#ventanaCrearMesa {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Añadir z-index para dar prioridad */
+}
+
+#mesaForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mesaForm h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#crearMesaForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#crearMesaForm label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#crearMesaForm input,
+#crearMesaForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#crearMesaForm button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+#crearMesaForm button:hover {
+    background-color: #2980b9;
+}
+
+#mostrarMesaCreada {
+    margin-top: 20px;
+    color: #1abc9c;
+}
+label {
+    margin-bottom: 5px;
+}
+
+#verMesas {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+
+#abrirVentanita {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px;
+    margin: 30px;
+}
+
+#abrirVentanita:hover {
+    background-color: #2980b9;
+    
+}
+#cerrarVentanita {
+    background-color: #e74c3c; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#cerrarVentanita:hover {
+    background-color: #702118; /* Cambio de color al pasar el ratón */
+}
+#botonEnviar {
+    background-color: #2ecc71; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botonEnviar:hover {
+    background-color: #27ae60; /* Cambio de color al pasar el ratón */
+}
+
+
+
+
+
+.mesa {
+    position: relative;
+
+    background-color: #f0f0f0; /* Color de fondo de la mesa */
+    margin: 10px; /* Espaciado entre mesas */
+    padding: 5px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+    text-align: center; /* Centra el texto dentro de la mesa */
+}
+.tarjetaMesa {
+    
+    border: 1px solid #ddd; /* Borde para separar las tarjetas */
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tarjetaMesa:hover {
+    transform: scale(1.05); /* Efecto de escalar al pasar el ratón */
+}
+
+
+.asiento {
+    width: 20px; /* Ancho del asiento */
+    height: 20px; /* Alto del asiento */
+    background-color: #3498db; /* Color del asiento */
+    display: inline-block; /* Mantiene los asientos en línea */
+    margin: 5px; /* Espaciado entre asientos */
+    border-radius: 4px; /* Bordes redondeados */
+}
+.numero-mesa {
+    font-size: 48px; /* Tamaño del número de mesa */
+    color: #555; /* Color gris para el número de mesa */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.textoAsientos {
+    color: #999; /* Color más sutil para el texto de asientos */
+    margin-top: auto; /* Pegado al fondo del contenedor */
+}
+
+.botonBorrar,
+.botonModificar {
+    background-color: #3498db; /* Color de fondo de los botones */
+    color: #fff; /* Color del texto de los botones */
+    padding: 10px 20px; /* Espaciado interno de los botones */
+    border: none; /* Elimina el borde de los botones */
+    border-radius: 4px; /* Bordes redondeados de los botones */
+    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo de los botones */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.botonBorrar:hover,
+.botonModificar:hover {
+    background-color: #2980b9; /* Cambio de color al pasar el ratón sobre los botones */
+}

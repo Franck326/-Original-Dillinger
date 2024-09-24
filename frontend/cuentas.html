@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cuentas - Dillinger</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/navBar.css" type="text/css">
+        <link rel="stylesheet" href="css/cuentas.css" type="text/css">
+        
+    </head>
+    <body>
+        <!-- -----------------------------Nav-Bar-------------------------------------------- -->
+        
+        <section id="navBar">
+            <h1 id="bienvenida"></h1>
+            <ul>
+                <li><button onclick="redirigir('index.html')">Salon</button></li>
+                <li><button onclick="redirigir('mesas.html')">Administrar mesas</button></li>
+                <li><button onclick="redirigir('cuentas.html')">Administrar cuentas</button></li>
+                <li><button onclick="redirigir('otros.html')">Otros</button></li>
+            </ul>
+        
+        
+        
+        
+            </section>
+        
+        
+<!-- ----------------------------------------------------------------- -->    
+    
+
+<section class="tarjetasDer" id ="cuentaForm">
+    <h2>Nueva Cuenta</h2>
+    <form id="crearCuentaForm" method="post">
+        <label for="mesa">Seleccionar Mesa:</label>
+        <select id="mesa" name="mesa" required>
+            <!-- <option value="mesa_id_1">Mesa 1</option>
+            <option value="mesa_id_2">Mesa 2</option>-->
+        </select>
+        
+
+        
+
+        <label for="consumo" id="datosTitulo">Datos De Consumo</label>
+        <section class="consumo">
+
+
+            <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Realizando">Realizando</option>
+                    <option value="Disponible">Disponible</option>
+                    <option value="Entregado">Entregado</option>
+                </select>
+            
+            <label for="producto">Producto:</label>
+            <input type="text" id="producto" name="producto">
+
+            <label for="precio">Precio $:</label>
+            <input type="number" id="precio" name="precio">
+
+        </section>
+
+
+        <label for="total">Total:$</label>
+        <input type="number" name="total" id="total">
+
+
+
+
+
+
+
+
+        <input class="botonEnviar" type="submit" value="Crear Cuenta">
+    </form>
+
+
+
+</section>
+<script src="js/main.js"></script>
+<script src="js/app/app.js"></script>
+<script src="js/locationChange.js"></script>
+
+
+</body>
+</html>
